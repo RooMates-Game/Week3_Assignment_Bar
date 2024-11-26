@@ -8,7 +8,7 @@ TagManager:
   - Laser
   - Wall
   - ToNextLevel
-  - RightBorder
+  - Shrinking
   layers:
   - Default
   - TransparentFX
