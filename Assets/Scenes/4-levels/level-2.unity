@@ -386,7 +386,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538888825}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596f9a18a45504547b39418f603b1b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1604446122}
   exclusionRadius: 5
 --- !u!61 &538888829
 BoxCollider2D:
@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596f9a18a45504547b39418f603b1b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1604446122}
   exclusionRadius: 5
 --- !u!212 &635477550
 SpriteRenderer:
@@ -853,8 +853,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -905787674860118486, guid: f7d0cece4156c8d4f970dc54dae67ede,
-    type: 3}
+  m_Sprite: {fileID: 931780460, guid: f7d0cece4156c8d4f970dc54dae67ede, type: 3}
   m_Color: {r: 0.85660374, g: 0.639555, b: 0.21172658, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -862,7 +861,7 @@ SpriteRenderer:
   m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &635477551
@@ -1256,6 +1255,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1604446135}
+    - targetCorrespondingSourceObject: {fileID: 3896440064613542801, guid: 41e5c0266515f1c49aec825f2068a297,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1604446137}
+    - targetCorrespondingSourceObject: {fileID: 3896440064613542801, guid: 41e5c0266515f1c49aec825f2068a297,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1604446136}
     - targetCorrespondingSourceObject: {fileID: 880349689355459643, guid: 41e5c0266515f1c49aec825f2068a297,
         type: 3}
       insertIndex: -1
@@ -1319,6 +1326,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3460ad62ce8a39e47a75c13b362f00d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1604446136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604446122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5bdb9dcf0b1334d84ad5109f222ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeringTag: Enlargment
+--- !u!114 &1604446137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604446122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5bdb9dcf0b1334d84ad5109f222ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeringTag: Shrinking
 --- !u!1 &1811610584
 GameObject:
   m_ObjectHideFlags: 0

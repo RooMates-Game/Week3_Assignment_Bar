@@ -4,7 +4,7 @@ public class Border_Collision : MonoBehaviour
 {
     [SerializeField] string triggeringTag;
 
-    [SerializeField] string whichBorder;
+    [SerializeField] string whichBorder; // explain which border he collide with
     
     [SerializeField] float offset = 0.3f;  // Use a small offset to avoid immediate re-collision
 

@@ -13,6 +13,7 @@ public class Resize : MonoBehaviour
             {
                 transform.localScale = originalSize / 2;
             }
+            //Enlarge the object
             if(triggeringTag == "Enlargment")
             {
                 transform.localScale = originalSize * 2;
@@ -26,6 +27,7 @@ public class Resize : MonoBehaviour
         }
     }
 
+    //after 3 seconds , return to original size
     private System.Collections.IEnumerator ResetSizeAfterDelay(Vector3 originalSize, float delay) {
         yield return new WaitForSeconds(delay);
         transform.localScale = originalSize;
