@@ -1,16 +1,22 @@
 using UnityEngine;
 
-public class shrinking : MonoBehaviour
+public class Resize : MonoBehaviour
 {
     [SerializeField] string triggeringTag;
-
         private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag(triggeringTag)) {
             // Store the original size
             Vector3 originalSize = transform.localScale;
 
             // Shrink the object
-            transform.localScale = originalSize / 2;
+            if(triggeringTag == "Shrinking")
+            {
+                transform.localScale = originalSize / 2;
+            }
+            if(triggeringTag == "Enlargment")
+            {
+                transform.localScale = originalSize * 2;
+            }
 
             // Start the coroutine to reset the size after 5 seconds
             StartCoroutine(ResetSizeAfterDelay(originalSize, 5f));

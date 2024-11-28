@@ -3,9 +3,15 @@ using UnityEngine;
 public class RandomSpawner : MonoBehaviour
 {
     [SerializeField] GameObject targetObject; // Reference to the other GameObject
-    [SerializeField] float exclusionRadius = 1f; // Radius to exclude around the target object
+    [SerializeField] float exclusionRadius = 5f; // Radius to exclude around the target object
     void Start()
     {
+        //Turn object visibile on 
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+        }
         // Ensure the target object is assigned
         if (targetObject == null)
         {
