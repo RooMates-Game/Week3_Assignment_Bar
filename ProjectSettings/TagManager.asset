@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - ToNextLevel
   - Shrinking
+  - Enlargment
   layers:
   - Default
   - TransparentFX
