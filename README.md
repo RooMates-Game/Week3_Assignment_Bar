@@ -67,3 +67,8 @@ The **Border_Collision** script ensures that the player cannot pass through the 
 ### How to Spawn Buffers:
 - Buffers are spawned randomly around the player based on the camera's boundaries using the `RandomSpawner.cs` script. The spawn locations respect a predefined radius distance from the player.
 
+---
+
+## Itch.io
+
+try this game : [Click here!](https://barmud.itch.io/assignment3-spaceship)
