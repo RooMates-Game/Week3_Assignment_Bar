@@ -3,18 +3,20 @@ using UnityEngine;
 public class Resize : MonoBehaviour
 {
     [SerializeField] string triggeringTag;
-        private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag(triggeringTag)) {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag(triggeringTag))
+        {
             // Store the original size
             Vector3 originalSize = transform.localScale;
 
             // Shrink the object
-            if(triggeringTag == "Shrinking")
+            if (triggeringTag == "Shrinking")
             {
                 transform.localScale = originalSize / 2;
             }
             //Enlarge the object
-            if(triggeringTag == "Enlargment")
+            if (triggeringTag == "Enlargment")
             {
                 transform.localScale = originalSize * 2;
             }
@@ -28,7 +30,8 @@ public class Resize : MonoBehaviour
     }
 
     //after 3 seconds , return to original size
-    private System.Collections.IEnumerator ResetSizeAfterDelay(Vector3 originalSize, float delay) {
+    private System.Collections.IEnumerator ResetSizeAfterDelay(Vector3 originalSize, float delay)
+    {
         yield return new WaitForSeconds(delay);
         transform.localScale = originalSize;
     }
