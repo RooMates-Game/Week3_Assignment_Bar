@@ -3,6 +3,10 @@ using UnityEngine;
 public class Resize : MonoBehaviour
 {
     [SerializeField] string triggeringTag;
+
+    [SerializeField] float resizeFactor = 2f; // factor of resize 
+
+    [SerializeField] float duration = 5f; //duration of the buff
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(triggeringTag))
@@ -13,16 +17,16 @@ public class Resize : MonoBehaviour
             // Shrink the object
             if (triggeringTag == "Shrinking")
             {
-                transform.localScale = originalSize / 2;
+                transform.localScale = originalSize / resizeFactor;
             }
             //Enlarge the object
             if (triggeringTag == "Enlargment")
             {
-                transform.localScale = originalSize * 2;
+                transform.localScale = originalSize * resizeFactor;
             }
 
             // Start the coroutine to reset the size after 5 seconds
-            StartCoroutine(ResetSizeAfterDelay(originalSize, 5f));
+            StartCoroutine(ResetSizeAfterDelay(originalSize, duration));
 
             // Destroy the other object
             Destroy(other.gameObject);
