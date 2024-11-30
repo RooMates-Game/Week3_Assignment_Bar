@@ -13,7 +13,7 @@ public class GameOverOnTrigger2D : MonoBehaviour
         {
             Debug.Log("Game over!");
             Application.Quit();
-            UnityEditor.EditorApplication.isPlaying = false;  // Error on editor 2021.3
+            // UnityEditor.EditorApplication.isPlaying = false;  // Error on editor 2021.3
         }
     }
 
